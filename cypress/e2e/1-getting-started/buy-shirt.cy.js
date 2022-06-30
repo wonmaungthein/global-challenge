@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-import mainLandingPage from '../../fixtures/landing-page/main-landing-page';
-import tShirtLandingPage from '../../fixtures/landing-page/tshirt-landing-page';
 import main from '../../fixtures/action/main';
 import {elements} from "../../dom/elements";
 import data from '../../fixtures/data.json.json';
@@ -42,9 +40,6 @@ describe('example to-do app', async () => {
       productSize: data.medium,
     },elements.summerDressesBtn)
 
-    // cy.log('Check out')
-    // main.checkOut()
-
     cy.log('Remove the Evening Dress from the cart')
     main.removeItem()
     cy.log('Verify the cart has only 2 items left')
@@ -54,9 +49,9 @@ describe('example to-do app', async () => {
 
     cy.log('7.Assert the total for each line in the cart')
     cy.get(elements.tShirtTotalPrice).should('have.text', data.tShirtTotalPriceVal)
-    cy.get(elements.summerDressTotalPrice).should('have.value', data.summerDressTotalPriceValue)
+    cy.get(elements.summerDressTotalPrice).should('have.text', data.summerDressTotalPriceValue)
 
     cy.log('8.Assert the cart total is $65.53')
-    cy.get(elements.totalPrice).should('have.value', data.desiredTotalPrice)
+    cy.get(elements.totalPrice).should('have.text', data.desiredTotalPrice)
     })
 })
