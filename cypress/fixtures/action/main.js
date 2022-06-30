@@ -35,6 +35,7 @@ class main {
 
         if(btn === 'continue'){
             cy.log('Click continue shopping btn')
+            tShirtMoreDetailLandingPage.continueShoppingBtn().should('be.visible').click()
         } else {
             shoppingCartSummaryPage.proceedToCheckoutBtn().should('be.visible').click()
             cy.url().should('include', `controller=order`)
