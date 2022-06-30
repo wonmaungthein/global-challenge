@@ -1,6 +1,4 @@
-# global-challenge
-
-## GLOBAL CHALLENGE: ###
+# global-automation-test-challenge
 
 Write automation test for : http://automationpractice.com/index.php
 
@@ -54,5 +52,5 @@ yarn run cypress open
 12. You wanted me to assert $65.53 but total cost is 64.00
 13. After some runs, it shows 508 status. Displayed "Resource Limit reach"
 14. Url end points are not consistent ( when choosing the tshirt colour and size, it has colour and size but when selecting evening dress it doesn't have it)
+15. Added some images in issues folder
 
-# global-automation-test-challenge
