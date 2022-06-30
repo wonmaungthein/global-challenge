@@ -19,6 +19,9 @@ Go to main directory and run
 yarn run cypress open
 ```
 
+### Test ###
+[The test](https://github.com/wonmaungthein/global-challenge/blob/main/cypress/e2e/1-getting-started/buy-shirt.cy.js)
+
 ### The approach I followed ###
 1. Visit Main Page
     1. Verify the main components in the page
